@@ -1862,6 +1862,19 @@
 			"foreground": "#CC92CC", // DevTo Macro
 			"fontStyle": "",
 		},
+		//* HTML
+		"entity.name.tag.html":{
+			"foreground": "#D3974E", // DevTo Keyword
+			"fontStyle": ""
+		},
+		"entity.other.attribute-name.html":{
+			"foreground": "#76c176",  // DevTo Green
+			"fontStyle": ""
+		},
+		"punctuation.definition.tag.begin.html":{
+			"foreground": "#C1C5CC",
+			"fontStyle": ""
+		},
 		//* Other
 		"event": {
 			"foreground": "#00aa00",
