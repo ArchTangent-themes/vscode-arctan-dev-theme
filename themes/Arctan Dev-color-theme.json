@@ -1419,10 +1419,9 @@
 		},
 		{
 			"scope": [
-				"punctuation.definition.keyValuePair.toml",
-				"variable.key.array.table.toml",
+				"support.type.property-name.table.toml",
+				"punctuation.definition.table.toml",
 				"entity.name.class.ron",
-				"variable.key.table.toml"
 			],
 			"settings": {
 				"foreground": "#6EADE5"
@@ -1430,8 +1429,8 @@
 		},
 		{
 			"scope": [
-				"variable.key.toml",
-				"punctuation.definition.table.toml"
+				"source.toml",
+				"support.type.property-name.toml",
 			],
 			"settings": {
 				"foreground": "#C1C5CC"
