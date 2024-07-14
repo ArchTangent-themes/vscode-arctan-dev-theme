@@ -1614,6 +1614,18 @@
 			"foreground": "#D3974E", // DevTo Keyword
 			"fontStyle": "",
 		},
+		"keyword.async": { // Rust async keyword
+			"foreground": "#D3974E", // DevTo Keyword
+			"fontStyle": "",
+		},
+		"keyword.constant": {
+			"foreground": "#D3974E", // DevTo Keyword
+			"fontStyle": "",
+		},
+		"keyword.unsafe": {  // Rust unsafe keyword
+			"foreground": "#D3974E", // DevTo Keyword
+			"fontStyle": "",
+		},
 		//* Plain Text
 		"angle": {  // Rust angle brackets <>
 			"foreground": "#C1C5CC",
