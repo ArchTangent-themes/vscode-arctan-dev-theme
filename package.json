@@ -4,7 +4,7 @@
     "author": "ArchTangent <archtangent13@gmail.com>",
     "displayName": "Arctan Dev",
     "description": "Arctan Dev theme for VS Code",
-    "version": "1.1.2",
+    "version": "1.1.4",
     "engines": {
         "vscode": "^1.63.0"
     },
