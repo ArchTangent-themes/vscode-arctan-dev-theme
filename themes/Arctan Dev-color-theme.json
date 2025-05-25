@@ -642,7 +642,8 @@
 			"scope": [
 				"comment",
 				"punctuation.definition.comment",
-				"string.comment"
+				"string.comment",
+				"string.quoted.docstring.multi.python"
 			],
 			"settings": {
 				"foreground": "#808080"
@@ -1115,6 +1116,7 @@
 		{
 			"scope": [
 				"string.quoted",
+				"string.quoted.multi.python",
 				"string.unquoted",
 				"string source",
 				"storage.type.string",
