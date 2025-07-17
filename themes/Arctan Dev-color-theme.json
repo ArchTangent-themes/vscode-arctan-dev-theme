@@ -637,18 +637,6 @@
 		//"window.inactiveBorder": null
 	},
 	"tokenColors": [
-		//* Comment
-		{
-			"scope": [
-				"comment",
-				"punctuation.definition.comment",
-				"string.comment",
-				"string.quoted.docstring.multi.python"
-			],
-			"settings": {
-				"foreground": "#808080"
-			}
-		},
 		//* Types
 		{
 			"scope": [
@@ -736,16 +724,6 @@
 			],
 			"settings": {
 				"foreground": "#C9D1D9"
-			}
-		},
-		{
-			"scope": [
-				"string",
-				"punctuation.definition.string",
-				"string punctuation.section.embedded source"
-			],
-			"settings": {
-				"foreground": "#A5D6FF"
 			}
 		},
 		{
@@ -1601,6 +1579,18 @@
 			"scope": "punctuation.definition.tag.begin.html",
 			"settings": {
 				"foreground": "#C1C5CC", // DevTo Keyword
+			}
+		},
+		//* Comment
+		{
+			"scope": [
+				"comment",
+				"punctuation.definition.comment",
+				"string.comment",
+				"string.quoted.docstring.multi.python"
+			],
+			"settings": {
+				"foreground": "#808080"
 			}
 		},
 	],
