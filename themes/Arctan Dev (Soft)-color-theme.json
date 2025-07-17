@@ -1112,13 +1112,12 @@
 		},
 		{
 			"scope": [
+				"entity.name.import.go",
 				"string.quoted",
 				"string.quoted.multi.python",
 				"string.unquoted",
 				"string source",
 				"storage.type.string",
-				"punctuation.definition.string.begin",
-				"punctuation.definition.string.end"
 			],
 			"settings": {
 				"foreground": "#D1BC68",
@@ -1437,6 +1436,7 @@
 		},
 		{
 			"scope": [
+				"string.quoted.double.json",
 				"string.quoted.double.json.comments",
 				"punctuation.definition.string.begin.json",
 				"punctuation.definition.string.end.json",
@@ -1645,10 +1645,6 @@
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"class": {
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},
 		"colon": {  // Rust colon :
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
@@ -1665,19 +1661,7 @@
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"enum": {
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},
-		"enumMember": { // Rust enum members
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},
-		"interface": {
-			// "foreground": "#A5D6FF",
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},             
+          
 		"generic": {    // Rust generic tokens with no mapping
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
@@ -1714,10 +1698,6 @@
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},            
-		"struct": {
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		}, 
 		"type": {
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
@@ -1734,35 +1714,87 @@
 			"foreground": "#C1C5CC", // e.g. <T> in function signature
 			"fontStyle": "",
 		},                
-		//* Functions, Structs, Traits, Enums
+		//* Functions, Structs, Traits, Enums, Unions
+		"class": {
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"class.builtin": {
+			"foreground": "#D3974E",
+			"fontStyle": "",
+		},
 		"class.declaration": {
-			"foreground": "#76c176",  // DevTo Green
+			"foreground": "#76c176", // DevTo Name
+			"fontStyle": "",
+		},
+		"class.typeHint": {
+			"foreground": "#6EADE5",
+			"fontStyle": "",
+		},
+		"enum": {
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"enumMember": { // Rust enum members
+			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
 		"enum.declaration": {
-			"foreground": "#76c176", // DevTo Green
+			"foreground": "#76c176", // DevTo Name
 			"fontStyle": "",
 		},
 		"function": {
-			"foreground": "#76c176",  // DevTo Green
+			"foreground": "#76c176", // DevTo Name
+			"fontStyle": "",
+		},
+		"function.async": { // async functions
+			"foreground": "#76c176", // DevTo Name
+			"fontStyle": "",
+		},
+		"function.unsafe": { // Rust unsafe functions
+			"foreground": "#76c176",
+			"fontStyle": "",
+		},
+		"interface": {
+			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
 		"interface.declaration": {
-			"foreground": "#76c176",  // DevTo Green
+			"foreground": "#76c176", // DevTo Name
 			"fontStyle": "",
 		},
 		"method": {
-			"foreground": "#76c176",  // DevTo Green
+			"foreground": "#76c176", // DevTo Name
+			"fontStyle": "",
+		},
+		"method.abstract": { // Python - ABC Absract methods - @abstractmethod
+			"foreground": "#76c176",
+			"fontStyle": "",
+		},
+		"method.static": { // Static methods (no self parameter (Rust); @staticmethod (Py))
+			"foreground": "#76c176",
+			"fontStyle": "",
+		},
+		"method.unsafe": { // Rust unsafe methods
+			"foreground": "#76c176",
+			"fontStyle": "",
+		},
+		"struct": {
+			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
 		"struct.declaration": {
-			"foreground": "#76c176",  // DevTo Green
+			"foreground": "#76c176", // DevTo Name
 			"fontStyle": "",
 		},
-		"trait.declaration": {  // Rust
-			"foreground": "#76c176",  // DevTo Green
+		"trait.declaration": { // Rust
+			"foreground": "#76c176", // DevTo Name
 			"fontStyle": "",
-		},                  
+		},
+		"union.declaration": { // Rust union declarations
+			"foreground": "#76c176", // DevTo Name
+			"fontStyle": "",
+		},              
 		//* Strings
 		"string": {
 			"foreground": "#D1BC68", // DevTo String

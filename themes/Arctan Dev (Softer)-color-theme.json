@@ -719,7 +719,7 @@
 				"storage.type",
 				"storage.type.function.async.python",
 				"storage.type.struct.c",
-				"storage.type.built-in.primitive.c"		
+				"storage.type.built-in.primitive.c"
 			],
 			"settings": {
 				"foreground": "#FF7B72"
@@ -1112,13 +1112,12 @@
 		},
 		{
 			"scope": [
+				"entity.name.import.go",
 				"string.quoted",
 				"string.quoted.multi.python",
 				"string.unquoted",
 				"string source",
 				"storage.type.string",
-				"punctuation.definition.string.begin",
-				"punctuation.definition.string.end"
 			],
 			"settings": {
 				"foreground": "#D1BC68",
@@ -1437,6 +1436,7 @@
 		},
 		{
 			"scope": [
+				"string.quoted.double.json",
 				"string.quoted.double.json.comments",
 				"punctuation.definition.string.begin.json",
 				"punctuation.definition.string.end.json",
@@ -1591,7 +1591,7 @@
 		{
 			"scope": "entity.other.attribute-name.html",
 			"settings": {
-				"foreground": "#76c176",  // DevTo Green
+				"foreground": "#76c176", // DevTo Green
 			}
 		},
 		{
@@ -1624,45 +1624,110 @@
 			"foreground": "#D3974E", // DevTo Keyword
 			"fontStyle": "",
 		},
-		"keyword.unsafe": {  // Rust unsafe keyword
+		"keyword.unsafe": { // Rust unsafe keyword
 			"foreground": "#D3974E", // DevTo Keyword
 			"fontStyle": "",
 		},
 		//* Plain Text
-		"angle": {  // Rust angle brackets <>
+		"angle": { // Rust angle brackets <>
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"brace": {  // Rust square brackets []
+		"brace": { // Rust square brackets []
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"builtin": {    // Zig builtins like @import
+		"builtin": { // Zig builtins like @import
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"builtinType": {    // Rust types like u32, str
+		"builtinType": { // Rust types like u32, str
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"class": {
+		"colon": { // Rust colon :
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"colon": {  // Rust colon :
+		"comma": { // Rust comma ,
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"comma": {  // Rust comma ,
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},  
 		"constParameter": { // Rust const parameters - N in <const N: usize>
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"dot": {    // Rust dot .
+		"dot": { // Rust dot .
 			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"generic": { // Rust generic tokens with no mapping
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"module": { // Python modules
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"namespace": {
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"parameter": {
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"parenthesis": { // Rust parenthesis ()
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"property": {
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"punctuation": { // Rust general punctuation
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"variable": {
+			"foreground": "#C1C5CC", // DevTo Text
+			"fontStyle": "",
+		},
+		"semicolon": { // Rust semicolon ;
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"type": {
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"typeAlias": { // Any aliases, including Rust Self in impls
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"typeAlias.trait": { // Rust type aliases in impls (Item in Iterator)
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"typeParameter": {
+			"foreground": "#C1C5CC", // e.g. <T> in function signature
+			"fontStyle": "",
+		},
+		//* Functions, Structs, Traits, Enums, Unions
+		"class": {
+			"foreground": "#C1C5CC",
+			"fontStyle": "",
+		},
+		"class.builtin": {
+			"foreground": "#D3974E",
+			"fontStyle": "",
+		},
+		"class.declaration": {
+			"foreground": "#76c176", // DevTo Name
+			"fontStyle": "",
+		},
+		"class.typeHint": {
+			"foreground": "#6EADE5",
 			"fontStyle": "",
 		},
 		"enum": {
@@ -1673,164 +1738,130 @@
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"interface": {
-			// "foreground": "#A5D6FF",
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},             
-		"generic": {    // Rust generic tokens with no mapping
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},                
-		"module": { // Python modules
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},            
-		"namespace": {
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},                               
-		"parameter": {
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},
-		"parenthesis": {    // Rust parenthesis ()
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},
-		"property": {
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},   
-		"punctuation": {    // Rust general punctuation
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},             
-		"variable": {
-			"foreground": "#C1C5CC", // DevTo Text
-			"fontStyle": "",
-		},
-		"semicolon": {  // Rust semicolon ;
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},            
-		"struct": {
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		}, 
-		"type": {
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},
-		"typeAlias": {  // Any aliases, including Rust Self in impls
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},
-		"typeAlias.trait": {  // Rust type aliases in impls (Item in Iterator)
-			"foreground": "#C1C5CC",
-			"fontStyle": "",
-		},
-		"typeParameter": {
-			"foreground": "#C1C5CC", // e.g. <T> in function signature
-			"fontStyle": "",
-		},                
-		//* Functions, Structs, Traits, Enums
-		"class.declaration": {
-			"foreground": "#76c176",  // DevTo Green
-			"fontStyle": "",
-		},
 		"enum.declaration": {
-			"foreground": "#76c176", // DevTo Green
+			"foreground": "#76c176", // DevTo Name
 			"fontStyle": "",
 		},
 		"function": {
-			"foreground": "#76c176",  // DevTo Green
+			"foreground": "#76c176", // DevTo Name
+			"fontStyle": "",
+		},
+		"function.async": { // async functions
+			"foreground": "#76c176", // DevTo Name
+			"fontStyle": "",
+		},
+		"function.unsafe": { // Rust unsafe functions
+			"foreground": "#76c176",
+			"fontStyle": "",
+		},
+		"interface": {
+			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
 		"interface.declaration": {
-			"foreground": "#76c176",  // DevTo Green
+			"foreground": "#76c176", // DevTo Name
 			"fontStyle": "",
 		},
 		"method": {
-			"foreground": "#76c176",  // DevTo Green
+			"foreground": "#76c176", // DevTo Name
+			"fontStyle": "",
+		},
+		"method.abstract": { // Python - ABC Absract methods - @abstractmethod
+			"foreground": "#76c176",
+			"fontStyle": "",
+		},
+		"method.static": { // Static methods (no self parameter (Rust); @staticmethod (Py))
+			"foreground": "#76c176",
+			"fontStyle": "",
+		},
+		"method.unsafe": { // Rust unsafe methods
+			"foreground": "#76c176",
+			"fontStyle": "",
+		},
+		"struct": {
+			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
 		"struct.declaration": {
-			"foreground": "#76c176",  // DevTo Green
+			"foreground": "#76c176", // DevTo Name
 			"fontStyle": "",
 		},
-		"trait.declaration": {  // Rust
-			"foreground": "#76c176",  // DevTo Green
+		"trait.declaration": { // Rust
+			"foreground": "#76c176", // DevTo Name
 			"fontStyle": "",
-		},                  
+		},
+		"union.declaration": { // Rust union declarations
+			"foreground": "#76c176", // DevTo Name
+			"fontStyle": "",
+		},
 		//* Strings
 		"string": {
 			"foreground": "#D1BC68", // DevTo String
 			"fontStyle": "",
 		},
 		"character": {
-			"foreground": "#D1BC68",  // DevTo String
+			"foreground": "#D1BC68", // DevTo String
 			"fontStyle": "",
 		},
 		"escapeSequence": { // Rust escape sequence
 			"foreground": "#D3974E", // DevTo Keyword
 			"fontStyle": "",
 		},
-		"formatSpecifier": {    // Rust {:?}
-			"foreground": "#D3974E",  // DevTo Keyword
+		"formatSpecifier": { // Rust {:?}
+			"foreground": "#D3974E", // DevTo Keyword
 			"fontStyle": "",
 		},
 		//* Lifetimes
-		"lifetime": {   // Rust lifetimes
-			"foreground": "#6eb0d1",  // DevTo Operator
+		"lifetime": { // Rust lifetimes
+			"foreground": "#6eb0d1", // DevTo Operator
 			"fontStyle": "",
 		},
 		//* Operators
-		"arithmetic": {  // Rust arithmetic operators
-			"foreground": "#6eb0d1",  // DevTo Operator
+		"arithmetic": { // Rust arithmetic operators
+			"foreground": "#6eb0d1", // DevTo Operator
 			"fontStyle": "",
 		},
-		"bitwise": {  // Rust bitwise operators
-			"foreground": "#6eb0d1",  // DevTo Operator
+		"bitwise": { // Rust bitwise operators
+			"foreground": "#6eb0d1", // DevTo Operator
 			"fontStyle": "",
 		},
 		"comparison": { // Rust comparison operators
-			"foreground": "#6eb0d1",  // DevTo Operator
+			"foreground": "#6eb0d1", // DevTo Operator
 			"fontStyle": "",
 		},
-		"logical": {    // Rust logical operators
-			"foreground": "#6eb0d1",  // DevTo Operator
+		"logical": { // Rust logical operators
+			"foreground": "#6eb0d1", // DevTo Operator
 			"fontStyle": "",
 		},
 		"operator": {
-			"foreground": "#6eb0d1",  // DevTo Operator
+			"foreground": "#6eb0d1", // DevTo Operator
 			"fontStyle": "",
 		},
 		//* Numbers
-		"number": {              
-			"foreground": "#CC92CC",  // DevTo Number
+		"number": {
+			"foreground": "#CC92CC", // DevTo Number
 			"fontStyle": "",
 			// "foreground": "#82BBD8",  // DevTo Number (orig)
 		},
 		//* Boolean
-		"boolean": {    // Rust {:?}
-			"foreground": "#51CCB7",   // DevTo Boolean
+		"boolean": { // Rust {:?}
+			"foreground": "#51CCB7", // DevTo Boolean
 			"fontStyle": "",
 		},
-		"builtinConstant": {    // Python True, False, None
-			"foreground": "#51CCB7",  // DevTo Boolean
+		"builtinConstant": { // Python True, False, None
+			"foreground": "#51CCB7", // DevTo Boolean
 			"fontStyle": "",
 		},
 		//* Attributes and brackets
-		"attribute": {  // Rust attribute macros
+		"attribute": { // Rust attribute macros
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"attributeBracket": {   // Rust #[] for attributes
-			"foreground": "#6EB0D1",  // DevTo Decorator
+		"attributeBracket": { // Rust #[] for attributes
+			"foreground": "#6EB0D1", // DevTo Decorator
 			"fontStyle": "",
 		},
-		"builtinAttribute": {   // Rust repr in #[repr(u8)]
+		"builtinAttribute": { // Rust repr in #[repr(u8)]
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
@@ -1842,20 +1873,20 @@
 		// 	"foreground": "#6EB0D1",  // DevTo Decorator
 		// 	"fontStyle": "",
 		// },
-		"*.decorator": {  // Python, Javascript (e.g. @classmethod, @dataclass)
-			"foreground": "#6EB0D1",  // DevTo  Decorator
+		"*.decorator": { // Python, Javascript (e.g. @classmethod, @dataclass)
+			"foreground": "#6EB0D1", // DevTo  Decorator
 			"fontStyle": "",
 		},
-		"derive": {     // Rust derive macros
+		"derive": { // Rust derive macros
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
 		//* Self
-		"selfKeyword": {    // Rust self
+		"selfKeyword": { // Rust self
 			"foreground": "#C567E5",
 			"fontStyle": "",
 		},
-		"selfParameter": {  // Python self parameter
+		"selfParameter": { // Python self parameter
 			"foreground": "#C567E5",
 			"fontStyle": "",
 		},
@@ -1863,13 +1894,13 @@
 		"enum.defaultLibrary": { // Rust enums (Result, Option)
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
-		},         
+		},
 		"enumMember.defaultLibrary": { // Rust enum members (Ok, Err, Some, None)
 			"foreground": "#D86050", // DevTo Red
 			"fontStyle": "",
-		},                
+		},
 		//* Python-specific
-		"clsParameter": {   // Python class parameter
+		"clsParameter": { // Python class parameter
 			"foreground": "#C567E5",
 			"fontStyle": "",
 		},
@@ -1881,13 +1912,13 @@
 			"foreground": "#6BB75B", // Arctan Green
 			"fontStyle": "",
 		},
-		"intrinsic": {  // Python intrinsics
+		"intrinsic": { // Python intrinsics
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
 		//* Macros and Builtins
 		"function.builtin:python": {
-			"foreground": "#D3974E",  // DevTo Macro
+			"foreground": "#D3974E", // DevTo Macro
 			"fontStyle": "",
 		},
 		"macro": {
@@ -1911,15 +1942,15 @@
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"trait": {  // Rust (also a token modifier)
+		"trait": { // Rust (also a token modifier)
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
-		"union": {  // Rust
+		"union": { // Rust
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
-		"unresolvedReference": {    // Rust unresolved references (RustAnalyzer)
+		"unresolvedReference": { // Rust unresolved references (RustAnalyzer)
 			"foreground": "#E572AF",
 			"fontStyle": ""
 		},
@@ -1928,22 +1959,22 @@
 		// "*.builtin": {   // Python print(), abs()
 		// 	"foreground": "#D3974E",  // DevTo Macro
 		// }, 
-		"*.callable": {   // Rust locals that implement an Fn* trait (std::ops::Fn)
+		"*.callable": { // Rust locals that implement an Fn* trait (std::ops::Fn)
 			"foreground": "#76C176",
 			"fontStyle": "",
-		},		
-		"*.constant": {  // Rust constants
+		},
+		"*.constant": { // Rust constants
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
-		"*.consuming": {  // Rust locals consumed in function call
+		"*.consuming": { // Rust locals consumed in function call
 			"fontStyle": "",
 		},
-		"controlFlow": {  // Rust control flow (including ?)
+		"controlFlow": { // Rust control flow (including ?)
 			"foreground": "#D3974E",
 			"fontStyle": "",
 		},
-		"*.crateRoot": {  // Rust namespace roots like `std`, `thiserror`, and `crate`
+		"*.crateRoot": { // Rust namespace roots like `std`, `thiserror`, and `crate`
 			"foreground": "#C1C5CC",
 			"fontStyle": "",
 		},
@@ -1957,8 +1988,8 @@
 		"variable.mutable": {
 			"fontStyle": "underline"
 		},
-		"*.typeHint": {   // Python
-			"foreground": "#6EADE5",    // TOML Blue
+		"*.typeHint": { // Python
+			"foreground": "#6EADE5", // TOML Blue
 			"fontStyle": "",
 			// "foreground": "#5BCCAA",    // Github Teal
 		},
@@ -1966,16 +1997,16 @@
 			"foreground": "#8B949E", // Arctan Comment
 			"fontStyle": "",
 		},
-		"*.injected": {  // Rust Code blocks in docstrings, e.g. ```rust fn foo() {} ```
+		"*.injected": { // Rust Code blocks in docstrings, e.g. ```rust fn foo() {} ```
 			"foreground": "#7AAFDD", // Arctan Code Block
 			"fontStyle": "",
-		},		
-		"*.intraDocLink": {   // Rust intra doc links, e.g. [Iterator](std::iter::Iterator)
+		},
+		"*.intraDocLink": { // Rust intra doc links, e.g. [Iterator](std::iter::Iterator)
 			"foreground": "#568AD8", // Arctan Link
 			"fontStyle": "",
 		},
 		//* Unused modifiers
-		"abstract": {   // Python
+		"abstract": { // Python
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
@@ -1983,7 +2014,7 @@
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
-		"defaultLibrary": {     // Std Library
+		"defaultLibrary": { // Std Library
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
@@ -1995,19 +2026,19 @@
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
-		"injected": {  // Rust docstring injected highlighting
+		"injected": { // Rust docstring injected highlighting
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
-		"intraDocLink": {   // Rust intra doc links in docstrings
+		"intraDocLink": { // Rust intra doc links in docstrings
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
-		"library": {    // Rust items defined outside current crate
+		"library": { // Rust items defined outside current crate
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
-		"public": {  // Rust pub items
+		"public": { // Rust pub items
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
@@ -2015,7 +2046,7 @@
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
-		"reference": {  // Rust locals behind a reference
+		"reference": { // Rust locals behind a reference
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
@@ -2023,13 +2054,13 @@
 			"foreground": "#00aa00",
 			"fontStyle": "",
 		},
-		"typeHintComment": {    // Python
+		"typeHintComment": { // Python
 			"foreground": "#00aa00",
 			"fontStyle": "",
-		},       
-		"unsafe": {  // Rust unsafe operations and token
+		},
+		"unsafe": { // Rust unsafe operations and token
 			"foreground": "#00aa00",
 			"fontStyle": "",
-		}, 
+		},
 	}
 }
