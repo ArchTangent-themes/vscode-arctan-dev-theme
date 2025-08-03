@@ -1144,7 +1144,11 @@
 				"constant.language",
 				"constant.language.boolean",
 				"constant.language.ron",
-				"constant.other.boolean.toml"
+				"constant.other.boolean.toml",
+				"entity.name.type.go",
+				"storage.type.string.go",
+				"storage.type.numeric.go",
+				"storage.type.error.go",
 			],
 			"settings": {
 				"foreground": "#51CCB7",
@@ -1425,6 +1429,9 @@
 				"string.quoted.double.yaml",
 				"punctuation.definition.string.begin.yaml",
 				"punctuation.definition.string.end.yaml",
+				"string.quoted.other.raw.kdl",
+				"string.quoted.triple.kdl",
+				"string.unquoted.kdl"
 			],
 			"settings": {
 				"foreground": "#A5C681",
