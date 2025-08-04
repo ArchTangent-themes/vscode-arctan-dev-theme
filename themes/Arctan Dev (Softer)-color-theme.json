@@ -1401,6 +1401,13 @@
 				"support.type.property-name.table.toml",
 				"punctuation.definition.table.toml",
 				"entity.name.class.ron",
+				"punctuation.separator.dictionary.key-value.json.five",
+				"punctuation.separator.dictionary.pair.json.five",
+				"punctuation.definition.dictionary.begin.json.five",
+				"punctuation.definition.dictionary.end.json.five",
+				"punctuation.definition.array.begin.json.five",
+				"punctuation.definition.array.end.json.five",
+				"punctuation.separator.array.json.five",
 			],
 			"settings": {
 				"foreground": "#6EADE5"
@@ -1410,6 +1417,7 @@
 			"scope": [
 				"source.toml",
 				"support.type.property-name.toml",
+				"support.type.property-name.json.five",
 			],
 			"settings": {
 				"foreground": "#C1C5CC"
@@ -1441,7 +1449,9 @@
 		{
 			"scope": [
 				"constant.numeric.float.toml",
-				"constant.numeric.integer.toml"
+				"constant.numeric.integer.toml",
+				"constant.numeric.dec.json.five",
+				"constant.character.escape.json.five",
 			],
 			"settings": {
 				"foreground": "#D8C87D"
